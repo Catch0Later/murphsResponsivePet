@@ -32,10 +32,10 @@ body {
 }
 
 
-
 #headerDiv {
 	width: 85%;
 	margin: 0 auto;
+	text-align: center;
 }
 
 h1 {
@@ -52,7 +52,7 @@ h1 {
 	color: orange;
 	font-size: 2rem;
 	font-weight: bold;
-	text-align: left;
+	text-align: center;
 }
 
 .sectionContainerDiv {
@@ -86,7 +86,17 @@ h1 {
 	
 }
 
+#pet4Div {
+	background-image: url("images/pet6.jpeg");
+}
 
+#pet5Div {
+	background-image: url("images/pet7.png");
+}
+
+#pet6Div {
+	background-image: url("images/pet8.jpeg");
+}
 
 #adoptText {
 	margin-left: 3rem;
@@ -115,6 +125,87 @@ footer {
 ** the iphone 5, iphone 6, nexus 6P, and iPad. The smallest of these is the iphone5 which
 ** has a width of 320 pixels 
 */
+
 @media only screen and (max-width: 600px) {
-	
+	.petDiv {
+		width: 100%;
+		margin: 0;
+	}
+	#headerDiv h1{
+		white-space: nowrap;
+		font-size: 1.6rem;
+	}
+	#footerCopyright {
+		white-space: nowrap;
+		margin-left: 2rem;
+	}
+	.sectionContainerDiv {
+		font-size: 1.6rem;
+	}
+}
+
+/* iPhone 5 */
+@media only screen and (min-width: 320px) and (max-width: 568px){
+	.petDiv {
+		width: 100%;
+		margin: 0;	
+	}
+	#headerDiv h1{
+		white-space: nowrap;
+		font-size: 1.6rem;
+	}
+	#footerCopyright {
+		white-space: nowrap;
+		margin-left: 3rem;
+	}
+	.sectionContainerDiv  {
+		font-size: 3rem;
+	}
+
+}
+
+/* iPhone 6 */
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+	.petDiv {
+		width: 100%;
+		margin: 0;	
+	}
+	#headerDiv h1{
+		white-space: nowrap;
+		font-size: 1.9rem;
+		text-align: center;
+	}
+	#footerCopyright {
+		white-space: nowrap;
+		margin-left: 5rem;
+	}
+	.sectionContainerDiv {
+		font-size: 1.6rem;
+	}
+}
+
+/* Nexus 6P */
+/*@media only screen and (min-width: px) and (max-width: px) {
+	.petDiv{
+		display: block;
+	}
+
+}*/
+
+/* iPad */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+	.petDiv {
+		width: 100%;
+		margin: 0;	
+	}
+	#headerDiv h1{
+		white-space: nowrap;
+		font-size: 4rem;
+	}
+	#footerCopyright {
+		white-space: nowrap;
+	}
+	.sectionContainerDiv  {
+		font-size: 1.6rem;
+	}
 }
